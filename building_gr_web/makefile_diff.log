@@ -1,0 +1,22 @@
+98,99c98
+< 	mkdir -p build-output/gnuradio/wasm
+< 	chmod 777 build-output/gnuradio/wasm
+---
+> 	rm -rf ./build-output/gnuradio
+100a100
+> 	mv build-output/gnuradio/lib build-output/gnuradio/_lib
+107,108c107
+< 	mkdir -p build-output/gnuradio/wasm
+< 	chmod 777 build-output/gnuradio/wasm
+---
+> 	rm -rf ./build-output/gnuradio
+109a109
+> 	mv build-output/gnuradio/lib build-output/gnuradio/_lib
+123,124c123,124
+< 	mkdir -p build-output/cpython/wasm/bin/
+< 	cd /home/shh/gnuradio-web/grc-dev && find . -name "*.py" | xargs ../build-output/cpython/wasm/bin/python3.11-i386 -m compileall
+---
+> 
+> 	cd ~/git/gnuradio-web/grc-dev && find . -name "*.py" | xargs ../build-output/cpython/wasm/bin/python3.11-i386 -m compileall
+146d145
+< 	mkdir -p build-output/gnuradio/lib/python3.11/site-packages
